@@ -1,9 +1,15 @@
 # Postman Collection Builder
 
+## Intro
 The postman collection builder captures http requests using Unirest's interceptor and 
-builds a collection based on the postman schema
+builds a collection based on the postman schema.
 
 This project demonstrates building structured collections based on unique paths, and custom Country and City request headers
+
+# Benefits
+- Ensure that postman collections are always up-to-date by building them using automated regression tests.
+- Reduces maintenance massively
+- Quickly and easily share collections with customers / clients
 
 ## Requirements
 - Java 11
@@ -17,7 +23,7 @@ Run Tests - `mvn clean test`
 
 ## How to use
 This project can be used as part of any API automation framework that uses Unirest as the underlying http library for making requests.
-For example, this can be easily used with frameworks such as Gauge and Cucumber.
+For example, this can be easily used with frameworks such as Gauge and Cucumber and configured in CI/CD pipelines using Jenkins.
 
 It can be enabled by toggling `POSTMAN_COLLECTION = true` in .properties and then building collections as part of after execution hooks. 
 
